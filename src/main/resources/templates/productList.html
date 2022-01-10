@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layout.html}">
+<head>
+<title>Taco Cloud</title>
+<script th:src="@{/scripts/ingredients.js}"></script>
+</head>
+
+<body>
+  <section layout:fragment="main" class="content">
+    <h1>商品列表</h1>
+    
+    <ul th:each="cuser:${wrap}">
+	    <li>
+	        <div class="com_content">
+	            <div class="name"><span th:text="${cuser.name}">贝美特</span><i>2小时前</i></div>
+	            <p class="text" th:text="${cuser.name}">1评论</p></div>
+	    </li>
+	</ul>
+    
+     
+      <div class="grid">
+      <img th:src="@{/a.jpg}"  style="width: 102.4px;height:76.8px"/>
+        <div class="ingredient-group">
+          <h3>商品描述:</h3>
+          <div >
+          	
+          </div>
+        </div>
+		<div class="ingredient-group">
+          <h3>价格:</h3>
+          <div >
+          	
+          </div>
+        </div>
+        
+         <img th:src="@{/a.jpg}"  style="width: 102.4px;height:76.8px"/>
+     
+        <div class="ingredient-group">
+          <h3>商品描述:</h3>   
+        </div>
+		<div class="ingredient-group">
+          <h3>价格:</h3>
+        
+        </div>
+        
+         <img th:src="@{/a.jpg}"  style="width: 102.4px;height:76.8px"/>
+      
+        <div class="ingredient-group">
+          <h3>商品描述:</h3>
+       
+        </div>
+		<div class="ingredient-group">
+          <h3>价格:</h3>
+          <div >
+          	
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
