@@ -27,7 +27,7 @@ public class CloneUtil {
 	 * @auther: jiangjw
 	 * @date: 2022/1/11 13:53
 	 */
-	public static <T extends Serializable> T deepClone(T  entity) throws Exception {
+	public static <T extends Serializable> T deepClone(T  entity) {
 		T cloneEntity = null;
 		try {
 			// 写入字节流

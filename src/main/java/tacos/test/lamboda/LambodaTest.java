@@ -1,4 +1,4 @@
-package tacos.test;
+package tacos.test.lamboda;
 
 import org.springframework.util.Assert;
 

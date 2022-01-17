@@ -1,0 +1,7 @@
+泛型测试，泛型分为两种：
+1.类层级 2.对象层级
+
+写了3个测试类：
+GenericityTestForClass 测试 类层级
+GenericityTestForObject 测试 对象层级
+GenericityTestForTwo 测试 2个层级一起兼容
